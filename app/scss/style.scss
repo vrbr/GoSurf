@@ -177,7 +177,6 @@
     }
 }
 .surf {
-    padding: 160px 0 120px;
     background-image: url("../img/surf-bg.png");
     background-position: right 200px;
     background-repeat: no-repeat;
@@ -409,6 +408,89 @@
             &::before {
                 left: auto;
                 right: 0;
+            }
+        }
+    }
+}
+
+//travel
+.travel {
+    background-image: url("../img/travel-bg.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    .slider-arrows {
+        top: 225px;
+        opacity: .5;
+    }
+}
+.travel-slider {
+    &__head {
+        background-repeat: no-repeat;
+        background-position: top left;
+        min-height: 780px;
+    }
+    &__descr {
+        margin-top: -230px;
+        padding-top: 160px;
+        padding-left: 132px;
+        min-height: 320px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        .descr__head {
+            position: relative;
+            padding-right: 78px;
+            img {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+    &__subtitle {
+        padding-top: 132px;
+        padding-right: 80px;
+        text-align: right;
+    }
+    &__btn {
+        text-align: center;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-around;
+        &-item {
+            position: relative;
+            min-height: 200px;
+            margin-bottom: 66px;
+        }
+        &-subtitle {
+            position: absolute;
+            top: 97px;
+            left: -97px;
+            width: 200px;
+            height: 0;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 8px;
+            opacity: 0.5;
+            transform: rotate(-90deg);
+            white-space: nowrap;
+            text-align: right;
+        }
+        &-title {
+            position: relative;
+            padding-left: 40px;
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 36px;
+            span {
+                position: absolute;
+                bottom: -8px;
+                right: 0;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 0;
+                letter-spacing: 5.25px;
+                opacity: 0.75;
             }
         }
     }
