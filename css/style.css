@@ -4704,6 +4704,9 @@ input[type=number] {
 
 .star-list li {
   display: inline-block;
+}
+
+.star-list li + li {
   margin-left: -25px;
 }
 
@@ -5310,5 +5313,233 @@ input[type=number] {
   line-height: 0;
   letter-spacing: 5.25px;
   opacity: 0.75;
+}
+
+.shop {
+  background-image: url("../img/shop-bg.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.shop .slider-arrows {
+  opacity: .25;
+}
+
+.shop__slider {
+  padding-left: 132px;
+}
+
+.shop__slider-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shop__slider-info {
+  max-width: 480px;
+  padding-top: 150px;
+  width: 100%;
+  margin-right: 40px;
+}
+
+.shop__slider-price {
+  margin-bottom: 64px;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.shop__slider-price sup {
+  padding-left: 2px;
+  font-size: 18px;
+}
+
+.shop__slider-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 170px;
+}
+
+.shop__star-list {
+  margin-left: -9px;
+}
+
+.shop__extras {
+  padding-left: 150px;
+}
+
+.shop__extras-title {
+  margin-bottom: 25px;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.shop__extras-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shop__extras-box {
+  margin-right: 57px;
+  text-align: center;
+}
+
+.shop__extras-img {
+  min-height: 105px;
+  margin-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop__extras-name {
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 8px;
+  opacity: 0.5;
+}
+
+.shop__extras-price {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.descr__head-shop {
+  margin-bottom: 47px;
+  max-width: 346px;
+}
+
+.surfboard {
+  position: relative;
+}
+
+.surfboard-box {
+  position: absolute;
+}
+
+.surfboard-box__circle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.surfboard-box__circle.active .circle-row {
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.surfboard-box__circle.active + .surfboard-box__content {
+  display: block;
+}
+
+.surfboard-box__content {
+  display: none;
+  position: absolute;
+  top: -15px;
+  left: 40px;
+  width: 359px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 24px;
+  padding-left: 104px;
+}
+
+.surfboard-box__content::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: #fff;
+  left: 0;
+  top: 50%;
+}
+
+.circle-row {
+  background-color: #4AF6CD;
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.circle-row + .circle-row {
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.surfboard__position--1 {
+  top: 215px;
+  right: 40px;
+}
+
+.surfboard__position--2 {
+  top: 313px;
+  left: -6px;
+}
+
+.surfboard__position--3 {
+  bottom: 70px;
+  left: 52px;
+}
+
+.surfboard__position--3 .surfboard-box__content {
+  top: -15px;
+  left: -400px;
+  padding-left: 0;
+  padding-right: 104px;
+}
+
+.surfboard__position--3 .surfboard-box__content::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: #fff;
+  right: 0;
+  left: auto;
+  top: 50%;
+}
+
+.footer {
+  padding-top: 285px;
+  padding-bottom: 34px;
+  text-align: center;
+}
+
+.footer .btn span {
+  padding-right: 17px;
+}
+
+.footer .btn span::after {
+  display: none;
+}
+
+.footer__copy {
+  padding-top: 27px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1.05px;
+  opacity: 0.5;
 }
 /*# sourceMappingURL=style.css.map */
