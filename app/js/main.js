@@ -87,4 +87,9 @@ $(function(){
         $(this).toggleClass('active')
     });
 
+    //бургер
+    $('.menu-btn').on('click', function() {
+        $('.menu').toggleClass('active');
+    });
+
 });

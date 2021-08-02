@@ -4898,6 +4898,38 @@ input[type=number] {
   text-transform: capitalize;
 }
 
+.menu-btn {
+  display: none;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  right: 22px;
+  top: 75px;
+  width: 60px;
+  height: 60px;
+  z-index: 20;
+}
+
+.menu-btn__inner {
+  width: 40px;
+}
+
+.menu-btn__line {
+  height: 5px;
+  background-color: #4AF6CD;
+}
+
+.menu-btn__line + .menu-btn__line {
+  margin-top: 5px;
+}
+
 .line-animation {
   stroke-dashoffset: 600;
   stroke-dasharray: 600;
@@ -5541,5 +5573,220 @@ input[type=number] {
   line-height: 14px;
   letter-spacing: 1.05px;
   opacity: 0.5;
+}
+
+@media (max-width: 1440px) {
+  .logo img {
+    width: 101px;
+  }
+  .menu {
+    padding-top: 10px;
+  }
+  .header__title {
+    font-size: 130px;
+    line-height: 108px;
+    top: 20px;
+    left: 60px;
+  }
+  .header__search {
+    padding-bottom: 8px;
+  }
+  .header__date {
+    font-size: 60px;
+  }
+  .header__date span {
+    margin-bottom: 5px;
+    padding-top: 0;
+    font-size: 14px;
+  }
+  .header__arrows {
+    left: 130px;
+  }
+  .header__location {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .header__aside {
+    position: absolute;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 109px;
+    padding-right: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-right: none;
+  }
+  .header__search {
+    padding: 33px 15px 15px;
+  }
+  .header__date {
+    padding: 15px;
+  }
+  .header__location {
+    margin-top: 42px;
+  }
+  .header__arrows {
+    left: 20px;
+    bottom: 20px;
+  }
+  .menu {
+    padding-top: 0;
+  }
+  .menu__list {
+    text-align: center;
+  }
+  .menu__list li {
+    display: inline-block;
+  }
+  .menu__list a {
+    padding: 15px;
+  }
+  .slider-item__info-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1340px) {
+  .header__map svg {
+    width: 500px;
+    height: 250px;
+  }
+  .slider-arrows {
+    top: 20px;
+    right: 20px;
+  }
+  .slider-arrows__left {
+    right: 60px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .header__arrows {
+    display: none;
+  }
+  .header__search {
+    padding: 40px 15px 15px;
+  }
+  .menu {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    z-index: 22;
+  }
+  .menu.active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .menu a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .slider-item__info {
+    position: absolute;
+    right: 20px;
+    bottom: 17px;
+    text-align: right;
+  }
+  .slider-item__info-text {
+    font-size: 30px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .slider-item__info-subtext {
+    margin-bottom: 5px;
+  }
+  .slider-item__info-title {
+    margin-bottom: 20px;
+    font-size: 55px;
+    line-height: 55px;
+  }
+  .headline-left {
+    padding-left: 65px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .headline-left::before {
+    width: 50px;
+  }
+  .slider-dotshead {
+    margin: 0 auto;
+    right: 0;
+    left: 10px;
+    bottom: 5px;
+  }
+  .dots-box {
+    width: 125px;
+  }
+  .dots-box__number {
+    font-size: 18px;
+  }
+  .dots-box__name {
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 960px) {
+  .slider-dotshead {
+    display: none;
+  }
+}
+
+@media (max-width: 460px) {
+  .header__aside {
+    display: block;
+    text-align: center;
+    padding-right: 0;
+    height: 100vh;
+  }
+  .header__search {
+    padding: 15px 0 5px;
+  }
+  .header__date {
+    padding: 0;
+    font-size: 50px;
+    line-height: 45px;
+  }
+  .header__date span {
+    font-size: 12px;
+  }
+  .header__location {
+    margin-top: 0;
+  }
+  .header__title {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
