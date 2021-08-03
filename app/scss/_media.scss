@@ -63,6 +63,16 @@
             bottom: 20px;
         }
     }
+    .shop {
+        &__slider {
+            &-price {
+                margin-bottom: 30px;
+            }
+            &-content {
+                padding-left: 40px;
+            }
+        }
+    }
     .menu {
         padding-top: 0;
         &__list {
@@ -150,6 +160,27 @@
         }
         &--8 {
             top: 397px;
+        }
+    }
+    .shop {
+        &__slider {
+            padding-left: 20px;
+            &-inner {
+                display: block;
+            }
+            &-info {
+                padding-top: 55px;
+                padding-bottom: 50px;
+            }
+        }
+    }
+    .surfboard__position--3 {
+        .surfboard-box__content {
+            left: 60px;
+            &::before {
+                width: 20px;
+                left: -32px;
+            }
         }
     }
 }
@@ -271,6 +302,9 @@
         padding-right: 65px;
         font-size: 16px;
         line-height: 18px;
+        &::before {
+            width: 50px;
+        }
     }
     .slider-dotshead {
         margin: 0 auto;
@@ -340,7 +374,30 @@
         display: none;
     }
 }
-@media(max-width: 900px) {
+@media(max-width: 767px) {
+    .shop {
+        &__extras {
+            padding-left: 75px;
+        }
+    }
+    .surfboard {
+        &-box {
+            &__content {
+                padding-left: 0;
+                top: 35px;
+                left: 0;
+                width: 270px;
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+    .surfboard__position--1 {
+        .surfboard-box__content {
+            left: -177px;
+        }
+    }
 }
 @media(max-width: 720px) {
     .title {
@@ -363,6 +420,25 @@
         &__subtitle {
             padding: 100px 20px 0 0;
         }
+    }
+}
+@media(max-width: 680px) {
+    .shop {
+        &__slider {
+            &-content {
+                display: block;
+            }
+        }
+        &__extras {
+            padding-left: 0;
+            padding-top: 35px;
+        }
+    }
+    .surfboard__position--1 {
+        left: 184px;
+    }
+    .footer{
+        padding: 100px 0 34px;
     }
 }
 @media(max-width: 640px) {
@@ -420,6 +496,16 @@
     .holder {
         background-size: 120px;
     }
+    .shop {
+        &__slider {
+            &-content {
+                padding-left: 0;
+            }
+        }
+    }
+    .surfboard__position--2 {
+        left: 3px;
+    }
 }
 @media(max-width: 425px) {
     .slider-map {
@@ -462,6 +548,13 @@
             .slider-dots__content {
                 width: 200px;
                 padding: 28px 10px 0;
+            }
+        }
+    }
+    .shop {
+        &__extras {
+            &-box {
+                margin-right: 30px;
             }
         }
     }
