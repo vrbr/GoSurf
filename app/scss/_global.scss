@@ -5,6 +5,8 @@ html {
     box-sizing: inherit;
 }
 body {
+    min-width: 320px;
+    overflow-x: hidden;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -65,13 +67,16 @@ ul, li {
     }
 }
 .title {
-    span {
+    div {
         position: relative;
         display: inline-block;
         font-weight: 800;
         font-size: 200px;
         color: rgba(#fff, .02);
         transform: translateX(-50px);
+    }
+    span {
+        display: inline-block;
     }
     h3 {
         position: absolute;

@@ -4470,6 +4470,8 @@ html {
 }
 
 body {
+  min-width: 320px;
+  overflow-x: hidden;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -4537,7 +4539,7 @@ ul, li {
   background-color: #fff;
 }
 
-.title span {
+.title div {
   position: relative;
   display: inline-block;
   font-weight: 800;
@@ -4545,6 +4547,10 @@ ul, li {
   color: rgba(255, 255, 255, 0.02);
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
+}
+
+.title span {
+  display: inline-block;
 }
 
 .title h3 {
@@ -4772,6 +4778,7 @@ input[type=number] {
   right: 0;
   top: 0;
   z-index: 3;
+  opacity: 0.5;
 }
 
 .header__arrows {
@@ -5003,10 +5010,6 @@ input[type=number] {
 
 .surf-box__inner:hover {
   background: rgba(28, 33, 33, 0.3);
-}
-
-.surf-box__inner:hover .surf-box__inner-btn {
-  display: block;
 }
 
 .surf-box__inner-title {
